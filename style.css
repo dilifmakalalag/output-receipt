@@ -1,0 +1,35 @@
+body {
+    font-family: 'Arial Narrow', Arial, sans-serif;    
+    max-width: auto;
+    font-size: 12px;
+}
+label, input {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.struk {
+    display: none;
+    border: 1px dashed black;
+    margin: auto;
+    text-align: left;
+}
+.struk h3 {
+    margin: 0 0 10px 0;
+    border-bottom: 1px dashed black;
+    padding-bottom: 5px;
+}
+.struk p {
+    margin: 5px 0;
+}

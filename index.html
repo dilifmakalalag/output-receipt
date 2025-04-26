@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Struk</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      .card {
+        width: 100%;
+        max-width: 800px; /* Adjusted to fit two columns */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card shadow p-4 my-5">
+        <h2 class="text-center">Form Struk Pertamina</h2>
+        <form id="strukForm">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="kode">Kode:</label>
+                <input type="text" id="kode" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="date">Tanggal:</label>
+                <input type="date" id="date" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="location">Lokasi:</label>
+                <input type="text" id="location" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="iata">IATA:</label>
+                <input type="text" id="iata" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="customer">Customer:</label>
+                <input type="text" id="customer" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="customerNumber">Customer Number:</label>
+                <input type="text" id="customerNumber" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="aircraftReg">Aircraft Reg:</label>
+                <input type="text" id="aircraftReg" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="aircraftType">Aircraft Type:</label>
+                <input type="text" id="aircraftType" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="flightNumber">Flight Number:</label>
+                <input type="text" id="flightNumber" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="flightType">Flight Type:</label>
+                <input type="text" id="flightType" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="nextDest">Next Destination:</label>
+                <input type="text" id="nextDest" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="serviceType">Service Type:</label>
+                <input type="text" id="serviceType" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="product">Product:</label>
+                <input type="text" id="product" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="vehicleNumber">Vehicle Number:</label>
+                <input type="text" id="vehicleNumber" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="parkingStand">Parking Stand W-03:</label>
+                <input type="text" id="parkingStand" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="hydrantPit">Hydrant Pit:</label>
+                <input type="text" id="hydrantPit" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="operator">Operator:</label>
+                <input type="text" id="operator" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="taskConfirmed">Task Confirmed:</label>
+                <input type="text" id="taskConfirmed" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="truckInPosition">Truck In Position:</label>
+                <input type="text" id="truckInPosition" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="fuelingStarted">Fueling Started (X):</label>
+                <input type="text" id="fuelingStarted" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="fuelingCompleted">Fueling Completed (Y):</label>
+                <input type="text" id="fuelingCompleted" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="meterRegNum">Meter Reg. Num:</label>
+                <input type="text" id="meterRegNum" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="totaliserAfter">Totaliser After:</label>
+                <input type="text" id="totaliserAfter" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="totaliserBefore">Totaliser Before:</label>
+                <input type="text" id="totaliserBefore" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="meterTotalisator">Meter Totalisator:</label>
+                <input type="text" id="meterTotalisator" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="notes">Notes</label>
+                <input type="text" id="notes" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="comments">Comment</label>
+                <input type="text" id="comments" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="fromFuelSample">From</label>
+                <input type="text" id="fromFuelSample" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="takenFuelSample">Taken</label>
+                <input type="text" id="takenFuelSample" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="pertaminaSign">Pertamina's Sign Name</label>
+                <input type="text" id="pertaminaSign" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="customerSign">Customer's Sign Name</label>
+                <input type="text" id="customerSign" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="timeNote">Time Note</label>
+                <input type="text" id="timeNote" class="form-control" />
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary btn-block mt-3"
+            onclick="printStruk()"
+          >
+            Cetak
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
