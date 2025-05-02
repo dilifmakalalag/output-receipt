@@ -28,9 +28,21 @@ function printStruk() {
   // Struktur output yang dijabarkan
   outputHTML += `
         <div class="container">
-            ${generateSingleRow("Date", formData.date, true)}
-            ${generateSingleRow("Lokasi", formData.location)}
-            ${generateSingleRow("IATA", formData.iata, true)}
+          <div class="row" style="font-size: 13pt; font-weight: normal; margin-left: 1.5mm;">
+            <div class="label scaled-text">Date</div>
+            <div class="separator">:</div>
+            <div class="value scaled-text">${formData.date}</div>
+          </div>
+          <div class="row" style="font-size: 12pt; font-weight: normal; margin-left: 1.5mm;">
+            <div class="label">Location</div>
+            <div class="separator">:</div>
+            <div class="value">${formData.location}</div>
+          </div>
+          <div class="row" style="font-size: 13pt; font-weight: normal; margin-left: 1.5mm;">
+            <div class="label scaled-text">IATA</div>
+            <div class="separator">:</div>
+            <div class="value scaled-text">${formData.iata}</div>
+          </div>
         </div>
         <div class="container" style="display: flex; flex-direction: row;margin-left:1.5mm;margin-top:3mm;margin-bottom:3mm;">
             <div class="column" style="flex: 1; margin-right: 10px;font-size:12px;">
@@ -50,7 +62,7 @@ function printStruk() {
         </div>
             </div>
         </div>
-        <div class="row" style="display: flex; align-items: center;margin-left: 1.5mm; padding: 0; font-size:25px;margin-bottom:3mm;width:3mm;">
+        <div class="row" style="display: flex; align-items: center;margin-left: 1.5mm; padding: 0; font-size:30px;margin-bottom:3mm;width:3mm;">
           <div class="label">
           <p style="display: inline-block; transform: scaleX(0.5); transform-origin: left; white-space: nowrap; margin: 0;padding:0;">
             Aircraft Reg
@@ -58,7 +70,7 @@ function printStruk() {
           </div>
           <div class="separator">:</div>
           <div class="value">
-          <p style="display: inline-block; transform: scaleX(0.5); transform-origin: left; white-space: nowrap; margin: 0;padding:0;">
+          <p style="display: inline-block; transform: scaleX(0.9); transform-origin: left; white-space: nowrap; margin: 0;padding:0;">
           ${formData.aircraftReg} 
           </p>
           </div>
@@ -109,7 +121,6 @@ function printStruk() {
             </div>
         </div>
         <p style="text-align:left;margin-left:1.5mm;font-size:12px;margin-top:0;padding-top:0;">Fueling Time (Y-X)  MIN</p>
-<<<<<<< HEAD
         <div class="container" style="margin-left:1.5mm;margin-top:3mm;">
          <div class="row">
           <div class="label">
@@ -124,11 +135,6 @@ function printStruk() {
           </p>
           </div>
         </div>
-=======
-        <div class="container" style="margin-left:1.5mm;">
-        
-            ${generateRow("Meter Reg. Num", formData.meterRegNum)}
->>>>>>> 98cf2406f1f0e8cb9d312de4b59aa17ae9caec1f
             ${generateRow("Totaliser After", formData.totaliserAfter)}
             ${generateRow("Totaliser Before", formData.totaliserBefore)}
              <div class="row">
@@ -146,13 +152,13 @@ function printStruk() {
         </div>
            
         </div>
-        <div style="margin-top: 0px;padding-top:0;margin-left:1.5mm;font-size:10px;">
+        <div style="margin-top: 5mm;margin-bottom:5mm;padding-top:0;margin-left:1.5mm;font-size:10px;">
           <p>--------------------------------------------------------------------------------------------------------------</p>
           <div style="display: flex; flex-direction: row;margin-top:0;padding-top:0;margin-bottom:0;padding-bottom:0;">
             <div class="column" style="flex: 1;">
-              <p style="font-size:14px;">QUANTITY</p>
+              <p style="font-size:16px;font-style:bold;">QUANTITY</p>
             </div>
-            <div style="text-align:right;margin-right:4mm;font-size:14px;">
+            <div style="text-align:right;margin-right:4mm;font-size:16px;font-style:bold;">
               <p>${formData.meterTotalisator} L</p>
             </div>
           </div>
@@ -162,7 +168,7 @@ function printStruk() {
         ${generateSingleRow("Notes", formData.notes)}
         ${generateSingleRow("Comment", formData.comments)}
         </div>
-        <p style="text-align:left;margin-left:1.5mm;font-size:12px;margin-bottom:0;padding-bottom:0;">FUELING SAMPLE</p>
+        <p style="text-align:left;margin-left:1.5mm;font-size:12px;margin-bottom:0;padding-bottom:0;margin-top:5mm;">FUELING SAMPLE</p>
         <div class="container" style="margin-top:0;padding-top:0;">
         ${generateSingleRow("From", formData.fromFuelSample)}
         ${generateSingleRow("Taken", formData.takenFuelSample)}
@@ -182,6 +188,9 @@ function printStruk() {
         <br>
         <br>
         <br>
+        <br>
+        <br>
+        <br>
         <div style="margin-top: 0px;padding-top:0;margin-left:1.5mm;font-size:12px;">
           <p>------------------------------------------------------------------------------------------</p>
           <div style="display: flex; flex-direction: row;margin-top:0;padding-top:0;margin-bottom:0;padding-bottom:0;">
@@ -198,6 +207,9 @@ function printStruk() {
         <br>
         <br>
         <br>
+         <br>
+        <br>
+        <br>
         <div style="margin-top: 0px;padding-top:0;margin-left:1.5mm;font-size:12px;">
           <p>------------------------------------------------------------------------------------------</p>
           <div style="display: flex; flex-direction: row;margin-top:0;padding-top:0;margin-bottom:0;padding-bottom:0;">
@@ -211,8 +223,10 @@ function printStruk() {
           </div>
         </div>
         <br>
-        <h5 style="display:inline;margin-bottom:3mm;padding-bottom:3mm;">THANK YOU</h5>
-        <br>
+        <div>
+        <h5 style="display:inline;margin-bottom:10mm;padding-bottom:10mm;">THANK YOU</h5>
+        </div>
+        
 `;
 
   function generateRow(label, value, separator = true) {
@@ -260,10 +274,11 @@ function printStruk() {
               p { margin: 5px 0; text-align: left; }
               .container { display: flex; flex-direction: column; font-size: 12px; margin: 1; padding: 0px; }
               .row { display: flex; justify-content: space-between; align-items: center; padding: 0; margin: 0; white-space: nowrap;font-size: 12px; }
-              .label { width: 80px; text-align: left; }
-              .separator { width: 10px; text-align: center; }
-              .value { flex: 1; text-align: left; }
+              .label { width: 80px; text-align: left; margin:0; padding:0; }
+              .separator { width: 10px; text-align: center; margin:0; padding:0;}
+              .value { flex: 1; text-align: left;margin:0; padding:0; }
               .column { display: flex; flex-direction: column; flex: 1; }
+                .scaled-text {display: inline-block; transform: scaleX(1.5); transform-origin: left; white-space: nowrap;}
             </style>
           </head>
           <body>
