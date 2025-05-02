@@ -110,18 +110,7 @@ function printStruk() {
         </div>
         <p style="text-align:left;margin-left:1.5mm;font-size:12px;margin-top:0;padding-top:0;">Fueling Time (Y-X)  MIN</p>
         <div class="container" style="margin-left:1.5mm;">
-         <div class="row">
-          <div class="label">
-          <p style="display: inline-block; transform: scaleX(0.8); transform-origin: left; white-space: nowrap; margin: 0;padding:0;">
-            Meter Reg. Num
-          </p>
-          </div>
-          <div class="separator">:</div>
-          <div class="value">
-          <p style="display: inline-block; transform: scaleX(0.5); transform-origin: left; white-space: nowrap; margin: 0;padding:0;">
-          ${formData.meterRegNum} 
-          </p>
-          </div>
+        
             ${generateRow("Meter Reg. Num", formData.meterRegNum)}
             ${generateRow("Totaliser After", formData.totaliserAfter)}
             ${generateRow("Totaliser Before", formData.totaliserBefore)}
