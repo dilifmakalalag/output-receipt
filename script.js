@@ -43,7 +43,7 @@ function printStruk() {
           </div>
           <div class="separator">:</div>
           <div class="value">
-          <p style="display: inline-block; transform: scaleX(0.5); transform-origin: left; white-space: nowrap; margin: 0;padding:0;">
+          <p style="display: inline-block; transform: scaleX(1.0); transform-origin: left; white-space: nowrap; margin: 0;padding:0;">
           ${formData.customerNumber} 
           </p>
           </div>
@@ -109,11 +109,36 @@ function printStruk() {
             </div>
         </div>
         <p style="text-align:left;margin-left:1.5mm;font-size:12px;margin-top:0;padding-top:0;">Fueling Time (Y-X)  MIN</p>
-        <div class="container" style="margin-left:1.5mm;">
-            ${generateRow("Meter Reg. Num", formData.meterRegNum)}
+        <div class="container" style="margin-left:1.5mm;margin-top:3mm;">
+         <div class="row">
+          <div class="label">
+          <p style="display: inline-block; transform: scaleX(0.9); transform-origin: left; white-space: nowrap; margin: 0;padding:0;">
+            Meter Reg. Num
+          </p>
+          </div>
+          <div class="separator">:</div>
+          <div class="value">
+          <p style="display: inline-block; transform: scaleX(1.0); transform-origin: left; white-space: nowrap; margin: 0;padding:0;">
+          ${formData.meterRegNum} 
+          </p>
+          </div>
+        </div>
             ${generateRow("Totaliser After", formData.totaliserAfter)}
             ${generateRow("Totaliser Before", formData.totaliserBefore)}
-            ${generateRow("Meter Totalisator", formData.meterTotalisator)}
+             <div class="row">
+          <div class="label">
+          <p style="display: inline-block; transform: scaleX(0.9); transform-origin: left; white-space: nowrap; margin: 0;padding:0;">
+            Meter Totalisator
+          </p>
+          </div>
+          <div class="separator">:</div>
+          <div class="value">
+          <p style="display: inline-block; transform: scaleX(1.0); transform-origin: left; white-space: nowrap; margin: 0;padding:0;">
+          ${formData.meterTotalisator} 
+          </p>
+          </div>
+        </div>
+           
         </div>
         <div style="margin-top: 0px;padding-top:0;margin-left:1.5mm;font-size:10px;">
           <p>--------------------------------------------------------------------------------------------------------------</p>
@@ -239,7 +264,7 @@ function printStruk() {
             <img style="margin-bottom:0;padding-bottom:0;" src="${base64Image}" alt="Logo" class="logo"> <br>
             <p style="margin-top:0;padding-top:0;margin-bottom:0;padding-bottom:0;font-size:30px;text-align: center; ">DELIVERY RECEIPT</p>
             <h4 style="margin-top:0;padding-top:0;">${formData.kode}</h4>
-            <div style="margin-left:1mm;width:100%;">
+            <div style="margin-left:1mm;width:77mm;">
             ${outputHTML}
             </div>
           </body>
