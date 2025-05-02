@@ -223,10 +223,8 @@ function printStruk() {
           </div>
         </div>
         <br>
-        <div>
-        <h5 style="display:inline;margin-bottom:10mm;padding-bottom:10mm;">THANK YOU</h5>
-        </div>
-        
+        <h5 style="display:inline;margin-bottom:3mm;padding-bottom:3mm;">THANK YOU</h5>
+        <br>
 `;
 
   function generateRow(label, value, separator = true) {
