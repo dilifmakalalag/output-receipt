@@ -109,7 +109,6 @@ function printStruk() {
             </div>
         </div>
         <p style="text-align:left;margin-left:1.5mm;font-size:12px;margin-top:0;padding-top:0;">Fueling Time (Y-X)  MIN</p>
-<<<<<<< HEAD
         <div class="container" style="margin-left:1.5mm;margin-top:3mm;">
          <div class="row">
           <div class="label">
@@ -124,11 +123,6 @@ function printStruk() {
           </p>
           </div>
         </div>
-=======
-        <div class="container" style="margin-left:1.5mm;">
-        
-            ${generateRow("Meter Reg. Num", formData.meterRegNum)}
->>>>>>> 98cf2406f1f0e8cb9d312de4b59aa17ae9caec1f
             ${generateRow("Totaliser After", formData.totaliserAfter)}
             ${generateRow("Totaliser Before", formData.totaliserBefore)}
              <div class="row">
