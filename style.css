@@ -1,8 +1,10 @@
-body {
-    font-family: 'Arial Narrow', Arial, sans-serif;    
-    max-width: auto;
-    font-size: 12px;
-}
+@font-face {
+    font-family: 'bitMatrixA1';
+    src: url('./bitMatrix-A1/bitMatrix-A1.ttf') format('opentype');
+  }
+  body {
+    font-family: 'bitMatrixA1', sans-serif;
+  }
 label, input {
     display: block;
     width: 100%;

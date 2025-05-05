@@ -28,17 +28,17 @@ function printStruk() {
   // Struktur output yang dijabarkan
   outputHTML += `
         <div class="container" style="width:76mm; padding: 0px; margin-top: 8mm; width: 74mm;">
-          <div class="row" style="font-size: 11pt; font-weight: normal; margin: 0mm;">
+          <div class="row" style="font-size: 10pt; font-weight: normal; margin: 0mm;">
             <div class="label scaled-text">Date</div>
             <div class="separator">:</div>
             <div class="value scaled-text">${formData.date}</div>
           </div>
-          <div class="row" style="font-size: 11pt; font-weight: normal; margin: 0mm;">
+          <div class="row" style="font-size: 10pt; font-weight: normal; margin: 0mm;">
             <div class="label">Location</div>
             <div class="separator">:</div>
             <div class="value">${formData.location}</div>
           </div>
-          <div class="row" style="font-size: 11pt; font-weight: normal; margin: 0mm;">
+          <div class="row" style="font-size: 10pt; font-weight: normal; margin: 0mm;">
             <div class="label scaled-text">IATA</div>
             <div class="separator">:</div>
             <div class="value scaled-text">${formData.iata}</div>
@@ -80,7 +80,7 @@ function printStruk() {
                 ${generateRow("Aircraft Type", formData.aircraftType)}
                 <div class="row" style="width:34mm;">
                   <div style="width:40mm;">Flight Number</div>
-                  <div style="margin-left:2mm;">:</div>
+                  <div style="margin-left:1mm;">:</div>
                   <div >${formData.flightNumber}</div>
                 </div>
                 ${generateRow("Next Dest.", formData.nextDest)}
@@ -139,11 +139,37 @@ function printStruk() {
           </p>
           </div>
         </div>
-            ${generateRow("Totaliser After", formData.totaliserAfter)}
-            ${generateRow("Totaliser Before", formData.totaliserBefore)}
-             <div class="row">
+         <div class="row">
           <div class="label">
-          <p style="display: inline-block; transform: scaleX(0.9); transform-origin: left; white-space: nowrap; margin: 0;padding:0;">
+          <p style="display: inline-block; transform: scaleX(0.7); transform-origin: left; white-space: nowrap; margin: 0;padding:0;">
+            Totaliser After
+          </p>
+          </div>
+          <div class="separator">:</div>
+          <div class="value">
+          <p style="display: inline-block; transform: scaleX(1.0); transform-origin: left; white-space: nowrap; margin: 0;padding:0;">
+          ${formData.totaliserAfter} 
+          </p>
+          </div>
+        </div>
+         <div class="row">
+          <div class="label">
+          <p style="display: inline-block; transform: scaleX(0.7); transform-origin: left; white-space: nowrap; margin: 0;padding:0;">
+            Totaliser Before
+          </p>
+          </div>
+          <div class="separator">:</div>
+          <div class="value">
+          <p style="display: inline-block; transform: scaleX(1.0); transform-origin: left; white-space: nowrap; margin: 0;padding:0;">
+          ${formData.totaliserBefore} 
+          </p>
+          </div>
+        </div>
+        
+         
+          <div class="row">
+          <div class="label">
+          <p style="display: inline-block; transform: scaleX(0.7); transform-origin: left; white-space: nowrap; margin: 0;padding:0;">
             Meter Totalisator
           </p>
           </div>
@@ -259,7 +285,14 @@ function printStruk() {
           <head>
             <title>Cetak Struk</title>
             <style>
-              body, html { font-family: Arial, sans-serif; padding: 0px; text-align: center;width: 76mm;transform: scale(1.225);
+            @font-face {
+                font-family: 'bitMatrixA1';
+                src: url('./bitMatrix-A1/bitMatrix-A1.ttf') format('opentype');
+              }
+              body {
+                font-family: 'bitMatrixA1', sans-serif;
+              }
+              body, html { padding: 0px; text-align: center;width: 76mm;transform: scale(1.225);
               transform-origin: top left; margin-left:1.8mm; }
               .logo { width: 150px; margin-bottom: 10px; }
               hr { border: 1px solid #000; margin: 10px 0; }
