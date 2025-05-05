@@ -183,7 +183,7 @@ function printStruk() {
            
         </div>
         <div style="margin-top: 5mm;margin-bottom:5mm;padding-top:0; width: 74mm;font-size:10px;">
-          <p>--------------------------------------------------------------------------------------------------------------</p>
+          <p>--------------------------------------------------------------------</p>
           <div style="display: flex; flex-direction: row;margin-top:0;padding-top:0;margin-bottom:0;padding-bottom:0;">
             <div class="column" style="flex: 1;">
               <p style="font-size:16px;font-style:bold;">QUANTITY</p>
@@ -192,7 +192,7 @@ function printStruk() {
               <p>${formData.meterTotalisator} L</p>
             </div>
           </div>
-          <p>--------------------------------------------------------------------------------------------------------------</p>
+          <p>--------------------------------------------------------------------</p>
         </div>
         <div class="container" style=" width: 74mm;">
         ${generateSingleRow("Notes", formData.notes)}
@@ -204,7 +204,7 @@ function printStruk() {
         ${generateSingleRow("Taken", formData.takenFuelSample)}
         </div>
         <div style="margin-top: 4mm;padding-top:0; width: 74mm;font-size:12px;">
-          <p>========================================<br>=============</p>
+          <p>============================================<br>=============</p>
           <div style="display: flex; flex-direction: row;margin-top:0;padding-top:0;margin-bottom:0;padding-bottom:0;">
             <div class="column" style="flex: 1;">
               <p>CERTIFIED THAT THE FUEL DELIVERED: <br> - CONFORM TO DEFENCE STANDARD 91-091 LATEST ISSUE OR SK <br> DIRJEN MIGAS <br> - COMPLETELY CHECKED IN ACCORDANCE WITH PERTAMINA QUALITY <br> CONTROL PROCEDURE <br> - PARTICULATE MATTER & UNDISSOLVED WATER AT NORMAL AMBIENT <br> TEMPERATURE</p>
@@ -217,7 +217,7 @@ function printStruk() {
         </div>
         
         <div style="margin-top: 0px;padding-top:0; width: 74mm;font-size:12px;margin-top:40mm;">
-          <p>------------------------------------------------------------------------------------------</p>
+          <p>-----------------------------------------------------------</p>
           <div style="display: flex; flex-direction: row;margin-top:0;padding-top:0;margin-bottom:0;padding-bottom:0;">
             <div class="column" style="flex: 1;">
               <p>I ACKNOWLEDGE RECEIPT OF THE PRODUCT AS STATED A NO RESPONSIBLE <br> FOR FUTHER OPERATION AND SAFETY OF THE AIRCRAFT</p>
@@ -230,7 +230,7 @@ function printStruk() {
         ${generateSingleRow("Name", formData.customerSign)}
         </div>
         <div style="margin-top: 0px;padding-top:0; width: 74mm;font-size:12px;margin-top:20mm;">
-          <p>========================================<br>=============</p>
+          <p>============================================<br>=============</p>
           <div style="display: flex; flex-direction: row;margin-top:0;padding-top:0;margin-bottom:0;padding-bottom:0;">
             <div class="column" style="flex: 1;">
               <p>${formData.date} ${formData.timeNote}</p>
@@ -310,7 +310,7 @@ function printStruk() {
           
           <div style="margin-left:1mm;margin-bottom:8mm;">
           <img style="margin-bottom:3mm;padding-bottom:0;" src="${base64Image}" alt="Logo" class="logo"> <br>
-          <p style="margin-top:0;padding-top:0;margin-bottom:0;padding-bottom:0;font-size:28px;text-align: center; ">DELIVERY RECEIPT</p>
+          <p style="margin-top:0;padding-top:0;margin-bottom:0;padding-bottom:0;font-size:30px;text-align: center; ">DELIVERY RECEIPT</p>
           <h4 style="margin-top:0;padding-top:0;">${formData.kode}</h4>
             ${outputHTML}
             </div>
